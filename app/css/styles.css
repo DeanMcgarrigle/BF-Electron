@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #343434;
+    color: #989898;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Metrophobic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Metrophobic';
+    src: url('../fonts/Metrophobic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#content-wrapper {
+    padding-left: 110px;
+    padding-right: 30px;
+    height: 100%;
+    font-size: 11pt;
+    -webkit-font-smoothing: antialiased;
+}
+
+#title-bar {
+    -webkit-app-region: drag;
+    height: 24px;
+}
+
+.main-footer {
+    background: #343434;
+    padding: 5px;
+    color: #444;
+
+    -webkit-transition: -webkit-transform .3s ease-in-out, margin .3s ease-in-out;
+    -moz-transition: -moz-transform .3s ease-in-out, margin .3s ease-in-out;
+    -o-transition: -o-transform .3s ease-in-out, margin .3s ease-in-out;
+    transition: transform .3s ease-in-out, margin .3s ease-in-out;
+}
+
+.progress-percent {
+    color: #676767;
+    vertical-align: text-bottom;
+}
+
+.main-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 75px;
+    z-index: 800;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    -o-transition: -o-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    padding-top: 50px;
+}
+
+.nav-sidebar {
+    text-align: center;
+}
+
+.main-sidebar:before,
+.main-sidebar:after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: -2px;
+    width: 1px;
+    height: 50%;
+}
+
+.main-sidebar:before {
+    top: 0;
+    background: linear-gradient(to top, rgba(45, 103, 136, 0.85) 0%, transparent 100%, transparent 100%) !important;
+}
+
+.main-sidebar:after {
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(45, 103, 136, 0.85) 0%, transparent 100%, transparent 100%) !important;
+}
+
+.nav-sidebar > li:before, .nav-sidebar > li:after {
+    content: "";
+    height: 1px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(147, 147, 147, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.nav-sidebar > li {
+    width: 100%;
+    background-color: #2F2F2F;
+    cursor: pointer;
+}
+
+.nav-sidebar > li > a {
+    color: gainsboro;
+}
+
+.nav-sidebar > li:focus, li:hover {
+    background-color: #272727 !important;
+    text-decoration: none;
+}
+
+.nav-sidebar > li > a:focus, a:hover {
+    color: snow !important;
+    text-decoration: none;
+}
+
+.slick-prev {
+    left: 0px !important;;
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: static !important;
+    top: 50%;
+    display: block;
+     width: initial !important;
+    height: 20px;
+    padding: 10px !important;
+    margin-top: -10px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.slide {
+    background: rgba(49, 49, 49, 0.6);
+    color: #3498db;
+    line-height: 60px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    opacity: 0.6;
+    transition: all 300ms ease;
+    -webkit-box-shadow: 0px 4px 13px 0px rgba(163,163,163,1);
+    -moz-box-shadow: 0px 4px 13px 0px rgba(163,163,163,1);
+    box-shadow: 0px 0px 4px 1px rgba(163,163,163,.1);
+    cursor: pointer;
+    height: 50px;
+}
+
+.slick-active .slide{
+    opacity: 0.8 !important;
+    transform: scale(1.08) !important;
+}
+
+.slick-center .slide{
+    color: #e67e22 !important;
+    opacity: 1 !important;
+    transform: scale(1.15) !important;
+}
+

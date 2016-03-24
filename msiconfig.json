@@ -1,0 +1,10 @@
+{
+  "win" : {
+    "title" : "MachSecure.Launcher",
+    "version" : "0.0.1",
+    "publisher": "DM",
+    "icon" : "./app/img/atom.ico",
+    "verbosity": 1,
+    "nsiTemplate": "./installer/config.nsi"
+  }
+}
